@@ -17,7 +17,8 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   titulo: {
-    color: "#fff"
+    color: "#fff",
+    fontFamily: "PlayfairDisplay-Bold",
   }
 });
 
