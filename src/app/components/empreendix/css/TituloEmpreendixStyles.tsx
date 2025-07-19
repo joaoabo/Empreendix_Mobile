@@ -17,4 +17,10 @@ export const styles = StyleSheet.create({
         flexDirection: 'row',
         alignItems: 'center',
     },
+    tituloHome: {
+        fontSize: 50,
+        fontWeight: 'bold',
+        textAlign: 'center',
+        color: '#e6b800'
+    }
 });

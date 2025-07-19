@@ -3,7 +3,6 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { NavigationContainer } from '@react-navigation/native';
 import SplashScreen from '../pages/splash/Splash';
-import TabRoutes from './tab.routes';
 import Login from '../pages/login/Login';
 
 
