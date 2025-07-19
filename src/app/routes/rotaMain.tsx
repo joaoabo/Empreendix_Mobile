@@ -14,7 +14,7 @@ export default function Routes(){
     useEffect(() => {
         const timer = setTimeout(() => {
             setShowSplash(false);
-        }, 8000);
+        }, 1000);
 
         return () => clearTimeout(timer);
     }, []);

@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { View } from 'react-native';
 import { Text, TextInput, Button } from 'react-native-paper';
 import { styles } from './css/stylesLogin';
+import Logo from '../../components/logo/Logo';
 
 export default function Login() {
   const [email, setEmail] = useState('');
@@ -13,6 +14,7 @@ export default function Login() {
 
   return (
     <View style={styles.container}>
+    <Logo/>
       <Text style={styles.title}>Bem-vindo 👋</Text>
       <Text style={styles.subtitle}>Digite seu Nome</Text>
 
@@ -36,7 +38,7 @@ export default function Login() {
         style={styles.button}
         disabled={!email.includes('@')}
       >
-        <Text>Próximo</Text>
+        <Text style={styles.nomeButom}>Entrar</Text>
       </Button>
     </View>
   )
