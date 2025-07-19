@@ -4,3 +4,8 @@ export type RotasPublicasParamList = {
     Home: undefined;
     DrawerRoutes: undefined;
 } 
+
+export type RotaStackParamList = {
+    Splash: undefined;
+    Login: undefined;
+}

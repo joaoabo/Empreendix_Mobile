@@ -4,6 +4,7 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { NavigationContainer } from '@react-navigation/native';
 import SplashScreen from '../pages/splash/Splash';
 import TabRoutes from './tab.routes';
+import Login from '../pages/login/Login';
 
 
 const Stack = createNativeStackNavigator();
@@ -14,7 +15,7 @@ export default function Routes(){
     useEffect(() => {
         const timer = setTimeout(() => {
             setShowSplash(false);
-        }, 4000);
+        }, 8000);
 
         return () => clearTimeout(timer);
     }, []);
@@ -27,7 +28,7 @@ export default function Routes(){
                         <Stack.Screen name="Splash" component={SplashScreen} />
                     ) : (
                         <>
-                        <Stack.Screen name="Tab" component={TabRoutes} />
+                        <Stack.Screen name="Login" component={Login} />
                         </>
                     )}
                 </Stack.Navigator>
